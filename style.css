@@ -7,18 +7,20 @@
     src: url(./fonts/Roboto-LightItalic.ttf);
 }
 
-* { 
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
 }
 
 body {
     background: linear-gradient(#0283C1,#211b15,black);
     min-height: 100%;
-    background-size:cover ;
+    margin: 0;
+    height: 100vh;
+
+    background-size:cover;
     background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container{
     text-align: center;
@@ -65,7 +67,6 @@ body > .image{
     color: #ffffff; 
 }
 .image{
-    margin-bottom: 10px;
     align-items: center;
     max-height: 300px;
     max-width: 230px;
