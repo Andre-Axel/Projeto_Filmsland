@@ -13,9 +13,8 @@
     box-sizing: border-box;
 }
 
-
 body {
-    background: linear-gradient( #8b0000,black);
+    background: linear-gradient(#0283C1,#211b15,black);
     min-height: 100%;
     background-size:cover ;
     background-position: center top;
