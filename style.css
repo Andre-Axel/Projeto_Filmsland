@@ -31,27 +31,27 @@ body {
     align-items: left;
     padding: 30px;
     width: 400px;
+    max-width: 100%;
 }
 .page-title{
     font-family: "Roboto-Medium", monospace;
     color: #ffffff;
     font-size: 25px;
-    margin:  0 0 5px;
+    margin: 10px;
     text-align: center;
 }
 
 .page-subtitle {
-    position: relative;
-    width: 300px;
     margin-top: 25px;
     margin-left: 35px;
-    
+
+    text-align: left;
     font-family:"Light-Italic";
     font-style: normal;
     font-size: 13px;
     line-height: 15px;
     color: #ffffff; 
-    }
+}
 
 .title-films{
     text-align: left;
@@ -63,9 +63,14 @@ body {
 body > .image{
     margin: 0 8px;
 }
-.name-films{
-    color: #ffffff; 
+.img-background{
+    position: relative;
+    text-align: right;
+    max-width: 100%;
+    height: 720px;
+    max-height: 60%;
 }
+
 .image{
     align-items: center;
     max-height: 300px;
