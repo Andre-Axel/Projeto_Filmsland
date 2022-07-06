@@ -31,25 +31,19 @@ body {
     align-items: left;
     padding: 30px;
     width: 400px;
-    
+    max-width: 100%;
 }
 .page-title{
     font-family: "Roboto-Medium", monospace;
     color: #ffffff;
     font-size: 25px;
     margin: 10px;
-    width: 25%;
     text-align: center;
-    top: 30px;
-    position: absolute;
 }
 
 .page-subtitle {
-    width: 300px;
     margin-top: 25px;
     margin-left: 35px;
-    top: 150px;
-    position: absolute;
 
     text-align: left;
     font-family:"Light-Italic";
@@ -57,21 +51,7 @@ body {
     font-size: 13px;
     line-height: 15px;
     color: #ffffff; 
-    }
-    .page-subtitle2{
-        width: 300px;
-        margin-top: 25px;
-        margin-left: 35px;
-        top: 210px;
-        position: absolute;
-    
-        text-align: left;
-        font-family:"Light-Italic";
-        font-style: normal;
-        font-size: 13px;
-        line-height: 15px;
-        color: #ffffff; 
-        }
+}
 
 .title-films{
     text-align: left;
@@ -89,7 +69,6 @@ body > .image{
     max-width: 100%;
     height: 720px;
     max-height: 60%;
-    background-image: linear-gradient(to top, #111 10%, transparent),linear-gradient(to bottom, #0283C1, transparent),linear-gradient(to right,#111,transparent), url("http://farofageek.com.br/wp-content/uploads/2020/06/wallpaper-de-dark-para-celular-800x445.jpg");
 }
 
 .image{
