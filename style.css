@@ -2,42 +2,98 @@
     font-family: Roboto-Medium;
     src: url(./fonts/Roboto-Medium.ttf);
 }
-
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family:Light-Italic;;
+    src: url(./fonts/Roboto-LightItalic.ttf);
 }
-html{
-    height: 100%;
+
+*{
+    box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient( black,#8b0000);
+    background: linear-gradient(#0283C1,#211b15,black);
     min-height: 100%;
-    background-size:cover ;
-    text-align: center;
+    margin: 0;
+    height: 100vh;
+
+    background-size:cover;
     background-position: center top;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
 }
 .container{
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+}
+
+.page{
+    align-items: left;
+    padding: 30px;
+    width: 400px;
+    
 }
 .page-title{
     font-family: "Roboto-Medium", monospace;
     color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+    top: 30px;
+    position: absolute;
+}
+
+.page-subtitle {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 35px;
+    top: 150px;
+    position: absolute;
+
+    text-align: left;
+    font-family:"Light-Italic";
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff; 
+    }
+    .page-subtitle2{
+        width: 300px;
+        margin-top: 25px;
+        margin-left: 35px;
+        top: 210px;
+        position: absolute;
+    
+        text-align: left;
+        font-family:"Light-Italic";
+        font-style: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #ffffff; 
+        }
+
+.title-films{
+    text-align: left;
+    margin-left: 25px;
+    color: #ffffff;
+    font-family:"Light-Italic";
     font-size: 18px;
-    margin:  0 0 5px;
 }
 body > .image{
     margin: 0 8px;
 }
-.name-films{
-    color: #ffffff; 
+.img-background{
+    position: relative;
+    text-align: right;
+    max-width: 100%;
+    height: 720px;
+    max-height: 60%;
+    background-image: linear-gradient(to top, #111 10%, transparent),linear-gradient(to bottom, #0283C1, transparent),linear-gradient(to right,#111,transparent), url("http://farofageek.com.br/wp-content/uploads/2020/06/wallpaper-de-dark-para-celular-800x445.jpg");
 }
-img{
+
+.image{
+    align-items: center;
     max-height: 300px;
     max-width: 230px;
     height: 250px;
@@ -46,12 +102,8 @@ img{
     padding: 10px;
     transition: all ease 0.3s;
 }
-img:hover{
+.image:hover{
     transition: 0.3s;
     transform: scale(1.1);
     z-index: 100;
-}
-.texto{
-    text-align: center;
-
 }
