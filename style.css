@@ -10,7 +10,6 @@
 *{
     box-sizing: border-box;
 }
-
 body {
     background: linear-gradient(#0283C1,#211b15,black);
     min-height: 100%;
@@ -21,12 +20,8 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;/*novo*/
 }
-.container{
-    text-align: center;
-    padding: 5px;
-}
-
 .page{
     align-items: left;
     padding: 30px;
@@ -55,7 +50,7 @@ body {
 
 .title-films{
     text-align: left;
-    margin-left: 25px;
+    margin-left: 50px;
     color: #ffffff;
     font-family:"Light-Italic";
     font-size: 18px;
@@ -63,27 +58,64 @@ body {
 body > .image{
     margin: 0 8px;
 }
-.img-background{
-    position: relative;
-    text-align: right;
-    max-width: 100%;
-    height: 720px;
-    max-height: 60%;
-}
-
+/*
 .image{
     align-items: center;
-    max-height: 300px;
-    max-width: 230px;
-    height: 250px;
-    width: 180px;
-    border-radius: 3%;
+    max-height: 250px;
+    max-width: 180px;
     padding: 10px;
     transition: all ease 0.3s;
     cursor: pointer;
+}*/
+
+/*.botao{
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 520px;
+    left: 5px;
+    z-index: 99;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+    border-style: none;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+}*/
+.botao:hover{
+    opacity: 1;
 }
-.image:hover{
+
+.image3{
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    margin-left: 10px;
+}
+.image3::-webkit-scrollbar{
+    width: 0px;
+}
+html::-webkit-scrollbar{
+    width: 0px;
+}
+.image-dois{
+    max-height: 250px;
+    max-width: 180px;
+    align-items: center;
+    max-height: 250px;
+    max-width: 180px;
+    padding: 10px;
+
+    transition: all ease 0.3s;
+}
+.image-dois:hover, .image-dois:focus, .image-dois:active{
     transition: 0.3s;
     transform: scale(1.1);
     z-index: 100;
 }
+/*.image:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    z-index: 100;
+}*/
