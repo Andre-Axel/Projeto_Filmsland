@@ -6,6 +6,10 @@
     font-family:Light-Italic;;
     src: url(./fonts/Roboto-LightItalic.ttf);
 }
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -52,7 +56,7 @@ body {
     text-align: left;
     margin-left: 50px;
     color: #ffffff;
-    font-family:"Light-Italic";
+    font-family:"Roboto-Bold";
     font-size: 18px;
 }
 body > .image{
@@ -114,8 +118,3 @@ html::-webkit-scrollbar{
     transform: scale(1.1);
     z-index: 100;
 }
-/*.image:hover{
-    transition: 0.3s;
-    transform: scale(1.1);
-    z-index: 100;
-}*/
