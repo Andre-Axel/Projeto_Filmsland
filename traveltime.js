@@ -13,12 +13,11 @@ var filmsTravelTime =
 ]
 
 for(var i=0; i < filmsTravelTime.length; i++){
-    document.write("<img class='image-dois' src=" + filmsTravelTime[i] + ">")
+    document.write("<img class='image-dois'src=" + filmsTravelTime[i] + ">")
 }
 
 function listFilmsTravel(filme2){
-    console.log(filme2)
-    var elementoFilmeFavorito = "<img src=" + filme2 + ">";
+    var elementoFilmeFavorito = "<img  src=" + filme2 + ">";
     var elementoListaFilmes = document.getElementById("listFilmsTravelTime");
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
 }

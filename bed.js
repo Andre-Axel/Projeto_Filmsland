@@ -12,10 +12,15 @@ var filmsBED =
  "https://br.web.img3.acsta.net/medias/nmedia/18/91/88/38/20167659.jpg", 
  "https://br.web.img2.acsta.net/medias/nmedia/18/90/43/26/20096298.jpg", 
 ]
-
+var links = [
+    "./films.html",
+    "./teste.html"
+]
+console.log(filmsBED)
 for(var i=0; i < filmsBED.length; i++){
-    document.write("<img class='image-dois' src=" + filmsBED[i] + ">")
+    document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsBED[i] + ">"+"</a>")
 }
+
 
 function listFilmsTravel(filme){
     console.log(filme)

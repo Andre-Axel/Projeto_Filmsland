@@ -24,4 +24,3 @@ function listFilms(filme){
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
 }
 
-document.addEventListener("touchstart", function() {}, true);
