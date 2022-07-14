@@ -3,8 +3,12 @@
     src: url(./fonts/Roboto-Medium.ttf);
 }
 @font-face {
-    font-family:Light-Italic;;
+    font-family:Light-Italic;
     src: url(./fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family:Roboto-Medium-Italic;
+    src: url(./fonts/Roboto-MediumItalic.ttf);
 }
 
 *{
@@ -22,6 +26,11 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;/*novo*/
 }
+.itens-page{
+    text-align: center;
+    align-items: center;
+}
+
 .page{
     align-items: left;
     padding: 30px;
@@ -47,53 +56,45 @@ body {
     line-height: 15px;
     color: #ffffff; 
 }
-
+hr{
+    margin: 2%;
+}
+/*Titulos*/
 .title-films{
     text-align: left;
-    margin-left: 50px;
+    margin-left: 25px;
+    max-width: 100%;
     color: #ffffff;
-    font-family:"Light-Italic";
-    font-size: 18px;
+    font-family:"Roboto-Medium-Italic";
+    font-size: 20px;
+}
+.title-films-page{
+    text-align: center;
+    max-width: 100%;
+    color: #ffffff;
+    font-family:"Roboto-Medium-Italic";
+    font-size: 23px;
 }
 body > .image{
     margin: 0 8px;
 }
-/*
-.image{
-    align-items: center;
-    max-height: 250px;
-    max-width: 180px;
-    padding: 10px;
-    transition: all ease 0.3s;
-    cursor: pointer;
-}*/
-
-/*.botao{
-    position: absolute;
-    width: 40px;
-    height: 100px;
-    top: 520px;
-    left: 5px;
-    z-index: 99;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    cursor: pointer;
-    border-style: none;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.6);
-}*/
-.botao:hover{
-    opacity: 1;
-}
-
+/*Imagens dos Filmes*/
 .image3{
     position: relative;
     display: flex;
-    overflow-x: auto;
+    overflow: auto;
     margin-left: 10px;
 }
+.image-page{
+    position: relative;
+    overflow: auto;
+    max-width: 100%;
+    text-align: center;
+}
 .image3::-webkit-scrollbar{
+    width: 0px;
+}
+.image-page::-webkit-scrollbar{
     width: 0px;
 }
 html::-webkit-scrollbar{
@@ -103,19 +104,84 @@ html::-webkit-scrollbar{
     max-height: 250px;
     max-width: 180px;
     align-items: center;
-    max-height: 250px;
-    max-width: 180px;
     padding: 10px;
 
     transition: all ease 0.3s;
 }
-.image-dois:hover, .image-dois:focus, .image-dois:active{
+.image-dois:hover{
     transition: 0.3s;
     transform: scale(1.1);
     z-index: 100;
 }
-/*.image:hover{
-    transition: 0.3s;
-    transform: scale(1.1);
-    z-index: 100;
-}*/
+/*Para as paginas*/
+.sinopse{
+    opacity: 0;
+    z-index: -99;
+    line-height: 1px;
+    overflow:hidden;
+
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+}
+.transition {
+    -webkit-transition: opacity 400ms, height 400ms;
+    -o-transition: opacity 400ms, height 400ms;
+    transition: opacity 400ms, height 400ms;
+    transition: all ease 1s;
+
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+    font-family:"Light-Italic";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+
+    opacity: 1;
+    z-index: 1;
+    overflow: visible;
+}
+.resenha{
+    font-size: 10px;
+    display: none;
+    width: 400px;
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+
+    text-align: center;
+    font-family:"Light-Italic";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff; 
+}
+.btn-sinopse{
+    margin-top:15px;
+    margin-bottom:10px;
+    padding: 5px;
+    color: #ffffff;
+    width: 400px;
+    max-width: 100%;
+
+    border-style: none;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.links{
+    padding: 10px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    max-width: 100%;
+}

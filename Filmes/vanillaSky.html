@@ -5,23 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sem Nome Ainda</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        
       </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006A9D; max-width: 100%; width: 100vw;">
-            <a class="navbar-brand" href="./index.html">Logo</a>
+            <a class="navbar-brand" href="/index.html">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Filmes</a>
@@ -42,54 +41,36 @@
               </ul>
             </div>
           </nav>
-
-          <div class="page">
-            <h1 class="page-title">
-              BEM VINDO A <strong>RECOMENDAÇÕES SEM NOME AINDA</strong>
-            </h1>
-            <p class="page-subtitle">
-              PEQUENO PROJETO COM O INTUIDO DE DEIXAR RECOMENDAÇÕPES DE FILMES PARA COMPARTILHAR ENTRE OS AMIGOS
-            </p>
-            <p class="page-subtitle">
-              AO LONGO DO TEMPO OCORRERA MELHORIAS E NOVAS FUNÇOES, E A QUEM TIVER MEU CONTATO DEIXE SUGESTOES DE FILMES E COISA QUE A PAGINA PODERA TER.
-            </p>
-          </div>
-
-          <hr>
-
-            <div>
-                <p class="title-films">Plot Twist</p>
-                <div class="image3" id="listFilms">
-                  <script src="./index.js"></script>
-                </div>
-                <hr>
-                  <p class="title-films">Viagens no Tempo</p>
-                <div class="image3" id="listFilmsTravelTime">
-                  <script src="./FilmsTravelTime/traveltime.js"></script>
-                </div>
-                <hr>
-                  <p class="title-films">Brad Pitt e DiCaprio</p>
-                <div class="image3" id="listBED">
-                  <script src="./FilmsBeD/bed.js"></script>
-                </div>
-                <hr>
-                  <p class="title-films">Tudo Junto e Misturado</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
-                </div>
-                <hr>
-                  <p class="title-films">Classicos do Terror</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
-                </div>
-                <hr>
-                  <p class="title-films">Tem um Olho na minha Lágrima</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
-                </div>
-                
-
+          <div class="itens-page">
+                <p class="title-films-page">Vanilla Sky</p>
+                <div class="image-page">
+                    <img class="image-dois"src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d2/Valilla%2Bsky%2Bposter.jpg/255px-Valilla%2Bsky%2Bposter.jpg",
+                    "/>
+                  </div>
+            
+                <button id="btn-sinopse" class="btn-sinopse">Sinopse</button>
+                    <div class="sinopse">
+                        <p>
+                            Um jovem rico luta para distinguir os sonhos da realidade após um acidente que o deixa desfigurado.
+                        </p>
+                    </div>
+                <button id="btn-resenha" class="btn-sinopse">O que se espera ao assistir?</button>
+                    <div class="resenha">
+                        <p>
+                        Filme de louco
+                        </p>
+                    </div>
+            <div class="links">
+                <a href="#">
+                    <p>Amazom Prime</p>
+                </a>
+                <a href="#">
+                    <p>Trailer</p>
+                </a>
             </div>
-
+          </div>     
+          
     </body>
+    <script src="/sinopse.js"></script>
+    
 </html>
