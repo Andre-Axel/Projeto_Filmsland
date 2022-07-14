@@ -28,7 +28,6 @@ var links = [
   "./Filmes/parasita.html",
   "./Filmes/oIlusionista.html",
 ]
-
 for(var i=0; i < filmsPlot.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsPlot[i] + ">"+"</a>")
 }
