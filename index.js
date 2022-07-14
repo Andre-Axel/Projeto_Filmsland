@@ -37,7 +37,3 @@ function listFilms(filme){
     var elementoListaFilmes = document.getElementById("listFilms");
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c2b250b9927c9d246c55d915eea5ec937d067fad

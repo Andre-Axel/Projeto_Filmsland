@@ -124,6 +124,8 @@ html::-webkit-scrollbar{
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    
+    transition: all ease 1s;
 
 }
 .transition {
