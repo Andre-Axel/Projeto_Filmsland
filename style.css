@@ -117,6 +117,8 @@ html::-webkit-scrollbar{
     opacity: 0;
     z-index: -99;
     line-height: 1px;
+    width: 400px;
+    margin: auto;
     overflow:hidden;
 
     pointer-events: none;
