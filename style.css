@@ -10,6 +10,14 @@
     font-family:Roboto-Medium-Italic;
     src: url(./fonts/Roboto-MediumItalic.ttf);
 }
+@font-face {
+    font-family:Roboto-Light;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family:Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
 *{
     box-sizing: border-box;
 }
@@ -26,6 +34,7 @@ body {
     overflow-x: hidden;/*novo*/
 }
 .itens-page{
+    font-family: Roboto-Regular;
     text-align: center;
     align-items: center;
 }
@@ -100,10 +109,11 @@ html::-webkit-scrollbar{
     width: 0px;
 }
 .image-dois{
-    max-height: 250px;
-    max-width: 180px;
+    height: 250px;
+    width: 170px;
+    margin: 7px;
     align-items: center;
-    padding: 10px;
+    box-shadow: 0 0 0.5em black;
 
     transition: all ease 0.3s;
 }
@@ -115,8 +125,11 @@ html::-webkit-scrollbar{
 /*Para as paginas*/
 .sinopse{
     opacity: 0;
-    z-index: -99;
-    line-height: 1px;
+    z-index: -50;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    line-height: 0px;
     overflow:hidden;
 
     pointer-events: none;
@@ -151,21 +164,6 @@ html::-webkit-scrollbar{
     z-index: 1;
     overflow: visible;
 }
-.resenha{
-    font-size: 10px;
-    display: none;
-    width: 400px;
-    max-width: 100%;
-    padding: 10px;
-    margin: auto;
-
-    text-align: center;
-    font-family:"Light-Italic";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 15px;
-    color: #ffffff; 
-}
 .btn-sinopse{
     margin-top:15px;
     margin-bottom:10px;
@@ -178,11 +176,71 @@ html::-webkit-scrollbar{
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 2em black;
+}
+.resenha{
+    opacity: 0;
+    z-index: -99;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    line-height: 1px;
+    overflow:hidden;
+    
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    
+    transition: all ease 1s;
+}
+.transition2 {
+    -webkit-transition: opacity 400ms, height 400ms;
+    -o-transition: opacity 400ms, height 400ms;
+    transition: opacity 400ms, height 400ms;
+    transition: all ease 1s;
+
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+    font-family:"Light-Italic";
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+
+    opacity: 1;
+    z-index: 1;
+    overflow: visible;
+}
+.btn-resenha{
+    margin-top:15px;
+    margin-bottom:10px;
+    padding: 5px;
+    color: #ffffff;
+    width: 400px;
+    max-width: 100%;
+
+    border-style: none;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 2em black;
+
 }
 .links{
     padding: 10px;
-    font-size: 20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-family:Roboto-Light;
     text-align: center;
     max-width: 100%;
+}
+
+.onde-ver{
+    color: white;
+    font-size: 20px;
 }
