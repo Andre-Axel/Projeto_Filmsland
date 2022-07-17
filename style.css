@@ -119,24 +119,17 @@ html::-webkit-scrollbar{
 }
 .image-dois:hover{
     transition: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.06);
     z-index: 100;
 }
 /*Para as paginas*/
 .sinopse{
     opacity: 0;
-<<<<<<< HEAD
-    z-index: -99;
-    line-height: 1px;
-    width: 400px;
-    margin: auto;
-=======
     z-index: -50;
     width: 400px;
     max-width: 100%;
     margin: auto;
     line-height: 0px;
->>>>>>> f02488c28ae4b0bc4f68ecd9e3e0bd97b322c3c8
     overflow:hidden;
 
     pointer-events: none;
@@ -246,8 +239,13 @@ html::-webkit-scrollbar{
     text-align: center;
     max-width: 100%;
 }
-
 .onde-ver{
     color: white;
     font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 5px;
 }

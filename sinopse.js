@@ -8,6 +8,7 @@ const exemplo = () => {
 }
 span.style.height = `${span_height}%`;
 button.addEventListener('click', exemplo);
+
 /*Para sumir o texto da resenha*/
 const span2 = document.querySelector('.resenha');
 const span2_height = span2.clientHeight;
