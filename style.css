@@ -21,6 +21,13 @@
 *{
     box-sizing: border-box;
 }
+/* scroll suave*/
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 8em;
+}
 body {
     background: linear-gradient(#0283C1,#211b15,black);
     min-height: 100%;
