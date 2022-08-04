@@ -12,7 +12,9 @@ var filmsPlot =
 "https://br.web.img3.acsta.net/c_310_420/pictures/16/10/19/01/57/552532.jpg",
 "https://m.media-amazon.com/images/I/81io9SYH5dL._AC_SL1500_.jpg",
 "http://www.cinevitor.com.br/wp-content/uploads/2015/10/oilusionistaposter.jpg",
-"https://br.web.img2.acsta.net/pictures/16/08/22/22/44/279579.jpg"
+"https://br.web.img2.acsta.net/pictures/16/08/22/22/44/279579.jpg",
+"https://br.web.img2.acsta.net/pictures/21/04/01/18/11/5786055.jpg"
+
 ]
 
 var links = [
@@ -29,6 +31,7 @@ var links = [
   "./Filmes/parasita.html",
   "./Filmes/oIlusionista.html",
   "./Filmes/oHomemnasTrevas.html",
+  "./Filmes/aEspreitadoMal.html"
 ]
 for(var i=0; i < filmsPlot.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsPlot[i] + ">"+"</a>")

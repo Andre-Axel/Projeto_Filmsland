@@ -15,9 +15,8 @@ var divNav = document.querySelector('.dropdown-menu')
 var plot = '<a class="dropdown-item" href="/index.html#plot">Plot Twist</a>'
 var travelTime ='<a class="dropdown-item" href="/index.html#traveltime" >Viagens no Tempo</a>'
 var bradDcp ='<a class="dropdown-item" href="/index.html#beD">Brad Pitt e DiCaprio</a>'
-var tmJ ='<a class="dropdown-item" href="/index.html#tudoJunto">Tudo Junto e Misturado</a>'
-var justWatch ='<a class="dropdown-item" href="/index.html#listJW">Apenas Assista</a>'
+var justWatch ='<a class="dropdown-item" href="/index.html#justW">Apenas Assista</a>'
 var temUmOlho ='<a class="dropdown-item" href="/index.html#listTUOML">Tem um Olho na minha Lágrima</a>'
 var terror ='<a class="dropdown-item" href="/index.html#listBVT">Bora ver uns Terror?</a>'
 
-divNav.innerHTML += plot + travelTime + bradDcp + tmJ + justWatch + temUmOlho + terror;
+divNav.innerHTML += plot + travelTime + bradDcp + justWatch + temUmOlho + terror;
