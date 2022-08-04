@@ -11,7 +11,8 @@ var filmsPlot =
 "https://br.web.img3.acsta.net/pictures/210/124/21012465_2013061319170245.jpg",
 "https://br.web.img3.acsta.net/c_310_420/pictures/16/10/19/01/57/552532.jpg",
 "https://m.media-amazon.com/images/I/81io9SYH5dL._AC_SL1500_.jpg",
-"http://www.cinevitor.com.br/wp-content/uploads/2015/10/oilusionistaposter.jpg"
+"http://www.cinevitor.com.br/wp-content/uploads/2015/10/oilusionistaposter.jpg",
+"https://br.web.img2.acsta.net/pictures/16/08/22/22/44/279579.jpg"
 ]
 
 var links = [
@@ -27,6 +28,7 @@ var links = [
   "./Filmes/arrival.html",
   "./Filmes/parasita.html",
   "./Filmes/oIlusionista.html",
+  "./Filmes/oHomemnasTrevas.html",
 ]
 for(var i=0; i < filmsPlot.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsPlot[i] + ">"+"</a>")
@@ -37,3 +39,4 @@ function listFilms(filme){
     var elementoListaFilmes = document.getElementById("listFilms");
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
 }
+

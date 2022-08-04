@@ -15,13 +15,12 @@ var links = [
     "./films.html",
     "./teste.html"
 ]
-console.log(filmsBED)
 for(var i=0; i < filmsBED.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsBED[i] + ">"+"</a>")
 }
 
 
-function listFilmsTravel(filme){
+function listFilms(filme){
     console.log(filme)
     var elementoFilmeFavorito = "<img src=" + filme + ">";
     var elementoListaFilmes = document.getElementById("listBED");

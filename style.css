@@ -44,6 +44,9 @@ body {
     font-family: "Roboto-Regular";
     text-align: center;
     align-items: center;
+    padding: 30px;
+    width: 400px;
+    max-width: 100%;
 }
 #navbot{
     background-color: #0E2744; 
@@ -96,7 +99,8 @@ hr{
     color: #ffffff;
     font-family:"Roboto-Medium-Italic";
     font-size: 35px;
-    padding-top: 80px;
+    padding-top: 60px;
+    margin: 5px;
 }
 body > .image{
     margin: 0 8px;
