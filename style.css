@@ -21,8 +21,15 @@
 *{
     box-sizing: border-box;
 }
+/* scroll suave*/
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 8em;
+}
 body {
-    background: linear-gradient(#0283C1,#211b15,black);
+    background: linear-gradient(#0E2744,#162027,#162027,#000000);
     min-height: 100%;
     margin: 0;
     height: 100vh;
@@ -34,11 +41,20 @@ body {
     overflow-x: hidden;/*novo*/
 }
 .itens-page{
-    font-family: Roboto-Regular;
+    font-family: "Roboto-Regular";
     text-align: center;
     align-items: center;
+    padding: 10px;
+    max-width: 100%;
 }
-
+#navbot{
+    background-color: #0E2744; 
+    max-width: 100%; 
+    width: 100vw; 
+    position: fixed; 
+    z-index: 1;
+}
+/*Titulo e Sub e alinhamento desta parte*/
 .page{
     align-items: left;
     padding: 30px;
@@ -51,8 +67,8 @@ body {
     font-size: 25px;
     margin: 10px;
     text-align: center;
+    padding-top: 70px;
 }
-
 .page-subtitle {
     margin-top: 25px;
     margin-left: 35px;
@@ -81,7 +97,9 @@ hr{
     max-width: 100%;
     color: #ffffff;
     font-family:"Roboto-Medium-Italic";
-    font-size: 23px;
+    font-size: 35px;
+    padding-top: 60px;
+    margin: 5px;
 }
 body > .image{
     margin: 0 8px;
@@ -112,6 +130,7 @@ html::-webkit-scrollbar{
     height: 250px;
     width: 170px;
     margin: 7px;
+    border-radius: 7px;
     align-items: center;
     box-shadow: 0 0 0.5em black;
 
@@ -127,7 +146,7 @@ html::-webkit-scrollbar{
     margin: auto;
     width: 400px;
     max-width: 100%;
-    padding: 0px 12px 5px 12px;
+    padding: 10px 12px 5px 12px;
 
     text-align: center;
     font-family:"Light-Italic";
@@ -135,61 +154,6 @@ html::-webkit-scrollbar{
     font-size: 14px;
     line-height: 15px;
     color: #ffffff;
-}
-    /*
-    opacity: 0;
-    z-index: -50;
-    width: 400px;
-    max-width: 100%;
-    margin: auto;
-    line-height: 0px;
-    overflow:hidden;
-
-    pointer-events: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    
-    transition: all ease 1s;
-
-}
-.transition {
-    -webkit-transition: opacity 400ms, height 400ms;
-    -o-transition: opacity 400ms, height 400ms;
-    transition: opacity 400ms, height 400ms;
-    transition: all ease 1s;
-
-    margin: auto;
-    width: 400px;
-    max-width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    text-align: center;
-    font-family:"Light-Italic";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 15px;
-    color: #ffffff;
-
-    opacity: 1;
-    z-index: 1;
-    overflow: visible;
-}*/
-.btn-sinopse{
-    margin-top:15px;
-    margin-bottom:10px;
-    padding: 5px;
-    color: #ffffff;
-    width: 400px;
-    max-width: 100%;
-
-    border-style: none;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 2em black;
 }
 .resenha{
     opacity: 0;
@@ -239,16 +203,17 @@ html::-webkit-scrollbar{
     max-width: 100%;
 
     border-style: none;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 2em black;
+    
+    backdrop-filter: blur(13px) saturate(200%);
+    -webkit-backdrop-filter: blur(13px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.44);
+    border-radius: 3px;
 
 }
 .links{
     padding: 10px;
     font-size: 17px;
-    font-family:Roboto-Light;
+    font-family:"Roboto-Light";
     text-align: center;
     max-width: 100%;
 }
@@ -256,7 +221,6 @@ html::-webkit-scrollbar{
     color: white;
     font-size: 20px;
 }
-
 footer{
     text-align: center;
     font-size: 10px;

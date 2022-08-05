@@ -9,20 +9,18 @@ var filmsBED =
  "https://br.web.img3.acsta.net/pictures/14/10/28/21/28/104479.jpg",
  "https://br.web.img3.acsta.net/medias/nmedia/18/91/21/46/20532444.jpg",
  "https://upload.wikimedia.org/wikipedia/pt/0/05/The_Curious_Case_of_Benjamin_Button.jpg",
- "https://br.web.img3.acsta.net/medias/nmedia/18/91/88/38/20167659.jpg", 
  "https://br.web.img2.acsta.net/medias/nmedia/18/90/43/26/20096298.jpg", 
 ]
 var links = [
     "./films.html",
     "./teste.html"
 ]
-console.log(filmsBED)
 for(var i=0; i < filmsBED.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsBED[i] + ">"+"</a>")
 }
 
 
-function listFilmsTravel(filme){
+function listFilms(filme){
     console.log(filme)
     var elementoFilmeFavorito = "<img src=" + filme + ">";
     var elementoListaFilmes = document.getElementById("listBED");

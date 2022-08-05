@@ -13,7 +13,7 @@
         
       </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006A9D; max-width: 100%; width: 100vw;">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbot">
             <a class="navbar-brand" href="./index.html">Logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -23,27 +23,22 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <!--<li class="nav-item">
-                  <a class="nav-link" href="#">Filmes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Series</a>
-                </li>-->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categorias
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style=" background-color: #fff">
                     <a class="dropdown-item" href="#plot">Plot Twist</a>
-                    <a class="dropdown-item" href="#traveltime">Viagens no Tempo</a>
+                    <a class="dropdown-item" href="#traveltime" >Viagens no Tempo</a>
                     <a class="dropdown-item" href="#beD">Brad Pitt e DiCaprio</a>
-                    <a class="dropdown-item" href="#tudoJunto">Tudo Junto e Misturado</a>
+                    <a class="dropdown-item" href="#justW">Apenas Assista</a>                 
+                    <a class="dropdown-item" href="#touml">Tem um Olho na minha Lágrima</a>
+                    <a class="dropdown-item" href="#bvt">Bora ver uns Terror?</a>
                   </div>
                 </li>
               </ul>
             </div>
           </nav>
-
           <div class="page">
             <h1 class="page-title">
               BEM VINDO A <strong>RECOMENDAÇÕES SEM NOME AINDA</strong>
@@ -78,22 +73,22 @@
                   <script src="./FilmsBeD/bed.js"></script>
                 </div>
 
-                <hr id="tudoJunto">
-                  <p class="title-films">Tudo Junto e Misturado</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
+                <hr id="justW">
+                  <p class="title-films">Apenas Assista</p>
+                <div class="image3" id="#listJW">
+                  <script src="./FilmsJustWatch/justWatch.js"></script>
                 </div>
 
-                <hr>
-                  <p class="title-films">Classicos do Terror</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
-                </div>
-
-                <hr>
+                <hr id="touml">
                   <p class="title-films">Tem um Olho na minha Lágrima</p>
-                <div class="image3" id="listBED">
-                  <script src="#"></script>
+                <div class="image3" id="listTUOML">
+                  <script src="./FilmsTUOML/tuoml.js"></script>
+                </div>
+                
+                <hr id="bvt">
+                  <p class="title-films">Bora ver uns Terror?</p>
+                <div class="image3" id="listBVT">
+                  <script src="./FilmsClassicHorror/terror.js"></script>
                 </div>
             </div>
             <br>
