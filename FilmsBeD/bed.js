@@ -1,4 +1,4 @@
-var filmsBED =
+/*var filmsBED =
 [
  "https://br.web.img3.acsta.net/c_310_420/pictures/21/12/06/21/17/3973076.jpg",
  "https://media.fstatic.com/0sPWEaj2wyvzjwGGZdGx4zakAxY=/210x312/smart/media/movies/covers/2014/03/o-lobo-de-wall-street_t33252.jpg",
@@ -12,7 +12,7 @@ var filmsBED =
  "https://br.web.img2.acsta.net/medias/nmedia/18/90/43/26/20096298.jpg", 
 ]
 var links = [
-    "./films.html",
+    "./FilmsBeD/naoOlhePraCima.html",
     "./teste.html"
 ]
 for(var i=0; i < filmsBED.length; i++){
@@ -25,4 +25,4 @@ function listFilms(filme){
     var elementoFilmeFavorito = "<img src=" + filme + ">";
     var elementoListaFilmes = document.getElementById("listBED");
     elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
-}
+}*/
