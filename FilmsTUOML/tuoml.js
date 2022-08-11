@@ -6,7 +6,8 @@ var filmsTUOML =
  "https://br.web.img3.acsta.net/pictures/210/530/21053062_20131025204305591.jpg",
  "https://br.web.img3.acsta.net/medias/nmedia/18/91/67/04/20157103.jpg",
  "https://br.web.img3.acsta.net/pictures/17/07/26/12/20/497293.jpg",
- "https://br.web.img3.acsta.net/pictures/16/08/31/23/26/562395.png"
+ "https://br.web.img3.acsta.net/pictures/16/08/31/23/26/562395.png",
+ "https://br.web.img3.acsta.net/pictures/16/09/21/19/14/207893.jpg"
 ]
 var links = [
     "./FilmsTUOML/encontroMarcado.html",
@@ -15,7 +16,8 @@ var links = [
     "./FilmsTUOML/questaodeTempo.html",
     "./FilmsTUOML/seteVidas.html",
     "./FilmsTUOML/comAmorVanGogh.html",
-    "./FilmsTUOML/quatroVidasdeumCachorro.html"
+    "./FilmsTUOML/quatroVidasdeumCachorro.html",
+    "./FilmsTUOML/capitaoFantastico.html"
 ]
 for(var i=0; i < filmsTUOML.length; i++){
     document.write("<a href="+links[i]+">"+"<img class='image-dois' src=" + filmsTUOML[i] + ">"+"</a>")
